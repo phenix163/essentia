@@ -14,7 +14,7 @@ SHARED_OR_STATIC="
 --enable-static
 "
 
-LIBAV_VERSION=libav-11.2
+FFMPEG_VERSION=ffmpeg-2.8.12
 TAGLIB_VERSION=taglib-1.10
 FFTW_VERSION=fftw-3.3.2
 LIBSAMPLERATE_VERSION=libsamplerate-0.1.8
@@ -25,15 +25,11 @@ GAIA_VERSION=v2.4.4
 LIBAV_AUDIO_FLAGS="
     --disable-doc
     --disable-debug
-    --disable-avconv
-    --disable-avplay
-    --disable-avprobe 
-    --disable-avserver 
-    --disable-avdevice  
-    --disable-swscale 
-    --disable-avfilter 
-    --disable-network 
-    --disable-indevs 
+    --disable-avdevice
+    --disable-swscale
+    --disable-avfilter
+    --disable-network
+    --disable-indevs
     --disable-outdevs
     --disable-muxers
     --disable-demuxers
@@ -183,12 +179,12 @@ FFTW_FLAGS="
     --enable-float \
     --enable-sse2 \
     --with-incoming-stack-boundary=2 \
-    --with-our-malloc16 
+    --with-our-malloc16
 "
 
 LIBSAMPLERATE_FLAGS="
     --disable-fftw \
-    --disable-sndfile 
+    --disable-sndfile
 "
 
 QT_FLAGS="
@@ -200,9 +196,9 @@ QT_FLAGS="
     -no-fontconfig
     -no-mitshm
     -no-xrender
-    -no-xrandr 
+    -no-xrandr
     -no-xfixes
-    -no-xcursor 
+    -no-xcursor
     -no-xinerama
     -no-xsync
     -no-xvideo
